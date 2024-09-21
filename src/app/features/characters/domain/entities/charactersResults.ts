@@ -4,6 +4,8 @@ class CharactersResults {
     next?: string
     prev?: string
 
+    characters: Character[];
+
     constructor (
         count:number,
         pages:number,
@@ -14,6 +16,7 @@ class CharactersResults {
         this.pages = pages;
         this.next = next;
         this.prev = prev;
+        this.characters = this.characters;
     }
 }
 
