@@ -1,3 +1,5 @@
+import Character from './character';
+
 class CharactersResults {
     count: number;
     pages: number;
@@ -9,14 +11,16 @@ class CharactersResults {
     constructor (
         count:number,
         pages:number,
+        characters: Character[],
         next?:string,
         prev?:string
+
     ){
         this.count = count;
         this.pages = pages;
         this.next = next;
         this.prev = prev;
-        this.characters = this.characters;
+        this.characters = characters;
     }
 }
 

@@ -1,4 +1,5 @@
 import './location'
+import CharacterLocation from './location';
 
 
 class Character{
@@ -7,7 +8,7 @@ class Character{
     status: string;
     gender: string;
     image: string;
-    Location: Location
+    location: CharacterLocation
 
     constructor(
         id: number,
@@ -15,14 +16,14 @@ class Character{
         status: string,
         gender: string,
         image: string,
-        Location: Location   
+        location: CharacterLocation   
     ){
         this.id =id;
         this.name = name;
         this.status = status;
         this.gender = gender;
         this.image = image;
-        this.Location = Location;
+        this.location = location;
     }
 
 
